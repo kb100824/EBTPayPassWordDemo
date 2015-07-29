@@ -15,7 +15,8 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
 
 #define kTextFieldMargin 1.f
-
+/**广播通知名名称常用赋值*/
+ NSString *const KNotification_ValidatePassWord = @"Notification_ValidatePassWord";
 @interface EBTPayPassWordView ()
 {
     UITextField *textFieldHiden; //用来调用键盘接收输入数字
@@ -344,7 +345,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
      这里用通知主要是用于:输入密码后单击确定按钮，然后输入密码要于后台服务器的密码进行验证。如果密码相等则移除该对话框。否则对对话框进行抖动提示密码错误
  
  **/
-     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(validatePassWordResult:) name:@"KNotification_ValidatePassWord" object:nil];
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(validatePassWordResult:) name:KNotification_ValidatePassWord object:nil];
     
 }
 /**文本框添加方法*/
@@ -480,6 +481,6 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
  */
 - (void)dealloc
 {
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"KNotification_ValidatePassWord" object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:KNotification_ValidatePassWord object:nil];
 }
 @end

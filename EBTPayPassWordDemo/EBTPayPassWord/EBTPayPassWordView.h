@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+//声明广播通知名称名常量
+extern NSString *const KNotification_ValidatePassWord ;
 typedef void(^CompleteHandler) (NSString *password);
 @interface EBTPayPassWordView : UIView
 {

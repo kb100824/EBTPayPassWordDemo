@@ -34,7 +34,7 @@
         
         
         
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"KNotification_ValidatePassWord" object:nil userInfo:dic];
+        [[NSNotificationCenter defaultCenter] postNotificationName:KNotification_ValidatePassWord object:nil userInfo:dic];
         
         
         NSLog(@"password = %@",password);
