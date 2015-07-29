@@ -14,6 +14,7 @@
 		2D749F221B67B3A200BCE6BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D749F211B67B3A200BCE6BC /* Images.xcassets */; };
 		2D749F251B67B3A200BCE6BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D749F231B67B3A200BCE6BC /* LaunchScreen.xib */; };
 		2D749F311B67B3A200BCE6BC /* EBTPayPassWordDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D749F301B67B3A200BCE6BC /* EBTPayPassWordDemoTests.m */; };
+		2D749F3D1B67B40F00BCE6BC /* EBTPayPassWordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D749F3C1B67B40F00BCE6BC /* EBTPayPassWordView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		2D749F2A1B67B3A200BCE6BC /* EBTPayPassWordDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EBTPayPassWordDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D749F2F1B67B3A200BCE6BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D749F301B67B3A200BCE6BC /* EBTPayPassWordDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBTPayPassWordDemoTests.m; sourceTree = "<group>"; };
+		2D749F3B1B67B40F00BCE6BC /* EBTPayPassWordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBTPayPassWordView.h; sourceTree = "<group>"; };
+		2D749F3C1B67B40F00BCE6BC /* EBTPayPassWordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBTPayPassWordView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		2D749F131B67B3A200BCE6BC /* EBTPayPassWordDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2D749F3A1B67B3DA00BCE6BC /* EBTPayPassWord */,
 				2D749F181B67B3A200BCE6BC /* AppDelegate.h */,
 				2D749F191B67B3A200BCE6BC /* AppDelegate.m */,
 				2D749F1B1B67B3A200BCE6BC /* ViewController.h */,
@@ -117,6 +121,15 @@
 				2D749F2F1B67B3A200BCE6BC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2D749F3A1B67B3DA00BCE6BC /* EBTPayPassWord */ = {
+			isa = PBXGroup;
+			children = (
+				2D749F3B1B67B40F00BCE6BC /* EBTPayPassWordView.h */,
+				2D749F3C1B67B40F00BCE6BC /* EBTPayPassWordView.m */,
+			);
+			path = EBTPayPassWord;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +234,7 @@
 			files = (
 				2D749F1D1B67B3A200BCE6BC /* ViewController.m in Sources */,
 				2D749F1A1B67B3A200BCE6BC /* AppDelegate.m in Sources */,
+				2D749F3D1B67B40F00BCE6BC /* EBTPayPassWordView.m in Sources */,
 				2D749F171B67B3A200BCE6BC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
