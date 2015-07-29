@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-//extern const NSString *KNotification_ValidatePassWord;
+
 @interface ViewController : UIViewController
 
 
