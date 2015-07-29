@@ -13,7 +13,7 @@
                                 @"validateResult":@(result)
                               };
 
-        /**通知名要和EBTPayPassWordView.m文件中监听通知的通知名保持一样*/
+        
         [[NSNotificationCenter defaultCenter] postNotificationName:KNotification_ValidatePassWord object:nil userInfo:dic];
         
         
